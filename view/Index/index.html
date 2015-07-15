@@ -1,0 +1,181 @@
+<link rel="import" href="/view/Html/header.html?__inline">
+	
+
+    <!-- //发布家教需求 -->
+    <div data-role="page" id="release">
+        
+        <!-- //header -->
+        <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
+            <a href="#dingdan" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Delete</a>
+            <h1 class="yousi_title">发布家教需求</h1>
+        </div>
+        <!-- //header end -->
+        
+        <!-- //ctn -->
+        <div data-role="content" class="ui-content"  data-theme="c">
+
+            <ul data-role="listview" data-inset="true" class="list" data-theme="c">
+                <li data-role="list-divider" class="fc_white">基本信息</li>
+
+
+                <li class="list_li">
+                    <div class="ui-field-contain">
+                        <label for="textinput-jzname">家长姓名:</label>
+                        <input type="text" name="textinput-fc" id="textinput-jzname" placeholder="请输入家长姓名" value="">
+                    </div>
+                </li>
+                <li class="list_li">
+                    <div class="ui-field-contain" >
+                        <label for="textinput-name">学生姓名:</label>
+                        <input type="text" name="textinput-fc" id="textinput-name" placeholder="请输入学生姓名" value="">
+                    </div>
+                </li>
+
+                <li class="list_li">
+                    <div class="ui-field-contain" >
+                        <label >学生性别:</label>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
+                    <label for="radio-choice-c">男生</label>
+                    <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
+                    <label for="radio-choice-d">女生</label>
+                </fieldset>
+                        </div>
+                </li>
+
+                <li class="list_li">
+                    <div class="ui-field-contain" >
+                        <label for="select-native-1">学生年级:</label>
+                        <select name="select-native-1" id="select-native-1" data-native-menu="false">
+                            <option value="1">小学一年级</option>
+                            <option value="2">小学二年级</option>
+                            <option value="3">小学三年级</option>
+                            <option value="4">小学四年级</option>
+                            <option value="4">小学五年级</option>
+                            <option value="4">初中预备班</option>
+                            <option value="4">初中一年级</option>
+                            <option value="4">初中二年级</option>
+                            <option value="4">初中三年级</option>
+                            <option value="4">高中一年级</option>
+                            <option value="4">高中二年级</option>
+                            <option value="4">高中三年级</option>
+                            <option value="4">成人</option>
+                          </select>
+                    </div>
+                </li>
+                <li class="list_li">
+                    <div class="ui-field-contain">
+                        <label for="textinput-jzname">联系方式:</label>
+                        <input type="text" name="textinput-fc" id="textinput-tel"  value="18621572653">
+                    </div>
+                </li>
+                <li class="list_li">
+                    <div class="ui-field-contain">
+                        <label for="textinput-jzname">授课地址:</label>
+                        <input type="text" name="textinput-fc" id="textinput-dizhi" placeholder="请输入小区名称" value="">
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul data-role="listview" data-inset="true" class="list" data-theme="c">
+                    <li data-role="list-divider" class="fc_white">家教信息</li>
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label for="select-native-1">主辅科目:</label>
+                            <select name="select-native-1" id="select-kemu" multiple="multiple" data-native-menu="false">
+                                <option>请选择</option>
+                                <option value="1">数学</option>
+                                <option value="2">物理</option>
+                                <option value="3">化学</option>
+                                <option value="4">生物</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list_li">
+                        <div class="ui-field-contain">
+                            <label for="select-custom-19">特殊需求:</label>
+                            <select name="select-custom-19" id="select-custom-19" multiple="multiple" data-native-menu="false">
+                                <option>请选择</option>
+                                <option value="1">无特殊需求</option>
+                                <option value="2">奥数辅导</option>
+                                <option value="3">英语授课</option>
+                                <option value="4">外语教材</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label >教员性别:</label>
+                            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                                <input type="radio" name="radio-choice-b" id="radio-choicejy-a" value="list" checked="checked">
+                                <label for="radio-choicejy-a">不限</label>
+                                <input type="radio" name="radio-choice-b" id="radio-choicejy-b" value="grid">
+                                <label for="radio-choicejy-b">男生</label>
+                                <input type="radio" name="radio-choice-b" id="radio-choicejy-c" value="grid">
+                                <label for="radio-choicejy-c">女生</label>
+                            </fieldset>
+                        </div>
+                    </li>
+
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label >加价(路途太远建议加价，增加选择率):</label>
+                            <select name="select-custom-19" id="select-custom-jiajia" data-native-menu="false">
+                                <option>请选择</option>
+                                <option value="1">不加价</option>
+                                <option value="2">+5元/时</option>
+                                <option value="3">+10元/时</option>
+                                <option value="4">+15元/时</option>
+                                <option value="5">+20元/时</option>
+                                <option value="6">+25元/时</option>
+                                <option value="7">+30元/时</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label >同时辅导:</label>
+                            <select name="select-custom-19" id="select-custom-tongshi" data-native-menu="false">
+                                <option value="1">1人</option>
+                                <option value="2">2人</option>
+                                <option value="3">3人</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label for="textarea">详细需求:</label>
+                            <textarea cols="40" rows="16" name="textarea" id="textarea" ></textarea>
+                        </div>
+                    </li>
+                    </ul>
+
+                <ul data-role="listview" data-inset="true" class="list" data-theme="c">
+                    <li class="list_li">
+                        <div class="ui-field-contain" >
+                            <label>签署公约:<a href="#">【查看公约】</a></label>
+                            </div>
+                                <div class="ui-radio">
+                                <label for="radio-enhanced" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">同意签署优思家教公约</label>
+                                <input type="radio" name="radio-enhanced" id="radio-enhanced" data-enhanced="true">
+                                 </div>
+
+                    </li>
+                </ul>
+                <button class="ui-btn ui-corner-all" type="submit" id="fabu_submit">确认提交订单</button>
+
+
+        </div>
+        <!-- //ctn end -->
+
+    </div>
+    <!-- //发布家教需求 end -->
+
+<link rel="import" href="/view/Html/footer.html?__inline">
+<script type="text/javascript">
+    require(['/lib/js/web/index'], function (app) {
+        
+    });
+</script>
